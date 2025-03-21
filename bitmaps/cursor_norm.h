@@ -2,7 +2,7 @@
 #define CURSOR_NORM_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t cursor_norm[] PROGMEM  = {
+static const unsigned int cursor_norm[] = {
 	0, 0, 0, 0, 0, 0, 0, 16, 16, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 16, 16, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 0, 0,

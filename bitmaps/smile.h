@@ -2,7 +2,7 @@
 #define SMILE_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t smile[] PROGMEM  = {
+static const unsigned int smile[] = {
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
 	29, 25, 25, 25, 25, 25, 0, 0, 0, 0, 25, 25, 25, 25, 25, 8,
 	29, 25, 25, 25, 0, 0, 45, 45, 45, 45, 0, 0, 25, 25, 25, 8,

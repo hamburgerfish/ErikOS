@@ -2,7 +2,7 @@
 #define NUM_NULL_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t num_null[] PROGMEM  = {
+static const unsigned int num_null[] = {
 	17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
 	17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17, 17,
 	17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17, 17, 17,

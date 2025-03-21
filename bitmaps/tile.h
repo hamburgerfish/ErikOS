@@ -2,7 +2,7 @@
 #define TILE_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t tile[] PROGMEM  = {
+static const unsigned int tile[] = {
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 8,
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 8, 8,

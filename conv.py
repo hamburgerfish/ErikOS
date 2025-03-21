@@ -31,5 +31,6 @@ for file in os.listdir("bitmaps_orig"):
         else:
             pre += " "
     pre = pre[:-2] + "\n};"
+    pre = pre.replace("uint8_t", "int").replace("PROGMEM  ", "")
     with open("bitmaps/"+file, "w", encoding="utf-8") as f:
         f.write(pre)

@@ -2,7 +2,7 @@
 #define FLAG_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t flag[] PROGMEM  = {
+static const unsigned int flag[] = {
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 8,
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 8, 8,

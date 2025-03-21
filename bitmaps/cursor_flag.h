@@ -2,7 +2,7 @@
 #define CURSOR_FLAG_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t cursor_flag[] PROGMEM  = {
+static const unsigned int cursor_flag[] = {
 	209, 209, 209, 209, 209, 209, 209, 16, 16, 209, 209, 209, 209, 209, 209, 209,
 	209, 209, 209, 209, 209, 209, 209, 16, 16, 209, 209, 209, 209, 209, 209, 209,
 	209, 209, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 209, 209,

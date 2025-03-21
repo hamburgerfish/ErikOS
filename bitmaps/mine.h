@@ -2,7 +2,7 @@
 #define MINE_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t mine[] PROGMEM  = {
+static const unsigned int mine[] = {
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
 	29, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 8,
 	29, 25, 25, 25, 25, 25, 25, 0, 0, 25, 25, 25, 25, 25, 25, 8,

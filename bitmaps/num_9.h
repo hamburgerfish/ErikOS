@@ -2,7 +2,7 @@
 #define NUM_9_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t num_9[] PROGMEM  = {
+static const unsigned int num_9[] = {
 	17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
 	17, 17, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 17, 17,
 	17, 17, 17, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 17, 17, 17,

@@ -2,7 +2,7 @@
 #define DEAD_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t dead[] PROGMEM  = {
+static const unsigned int dead[] = {
 	29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
 	29, 25, 25, 25, 25, 25, 0, 0, 0, 0, 25, 25, 25, 25, 25, 8,
 	29, 25, 25, 25, 0, 0, 45, 45, 45, 45, 0, 0, 25, 25, 25, 8,

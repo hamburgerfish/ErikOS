@@ -2,7 +2,7 @@
 #define MINE_EXPLODE_WIDTH 16
 
 // array size is 768
-static const unsigned uint8_t mine_explode[] PROGMEM  = {
+static const unsigned int mine_explode[] = {
 	6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
 	6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
 	6, 6, 6, 6, 6, 6, 6, 0, 0, 6, 6, 6, 6, 6, 6, 6,
