@@ -1,3 +1,5 @@
+#include "../cpu/types.h"
+
 #define _1_HEIGHT 16
 #define _1_WIDTH 16
 
