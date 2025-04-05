@@ -19,12 +19,3 @@ void kernel_main() {
 	init_board();
 	init_counter();
 }
-
-void user_input(char *input) {
-	if (strcmp(input, "END") == 0) {
-		asm volatile("hlt");
-	}
-	if (strcmp(input, "MINESWEEPER") == 0) {
-		clear_screen();
-	}
-}
