@@ -16,5 +16,6 @@
 void clear_screen();
 void set_pixel(int col, int row, uint8_t colour);
 void print_image(int col, int row, int height, int length, unsigned const int* bitmap);
+void get_bitmap(int x, int y, unsigned int* out_tile);
 void set_cursor_offset(int offset);
 #endif

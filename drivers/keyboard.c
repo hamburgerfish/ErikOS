@@ -13,8 +13,7 @@
 #define LEFT 0x1E
 #define DOWN 0x1F
 #define RIGHT 0x20
-
-static char key_buffer[256];
+#define FLAG_MODE 0x21
 
 #define SC_MAX 57
 const char *sc_name[] = { "ERROR", "Esc", "1", "2", "3", "4", "5", "6",
@@ -35,16 +34,14 @@ static void keyboard_callback(registers_t *regs) {
     
     if (scancode > SC_MAX) return;
     if (scancode == ENTER) {
-	    user_input(key_buffer);
-	    key_buffer[0] = '\0';
+	    reveal();
     } else if (scancode == UP || scancode == LEFT || scancode == DOWN || scancode == RIGHT) {
 	    move_cursor(scancode);
     }
-    else {
-	    char letter = sc_ascii[(int)scancode];
-	    char str[2] = {letter, '\0'};
-	    append(key_buffer, letter);
+    else if (scancode == FLAG_MODE) {
+	    switch_mode();
     }
+
     UNUSED(regs);
 }
 

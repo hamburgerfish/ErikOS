@@ -23,7 +23,10 @@ typedef struct {
 uint32_t rng();
 void init_board();
 void start();
+void init_counter();
+void switch_mode();
 void move_cursor(uint8_t dir);
+void reveal();
 void show_logo();
 
 #endif

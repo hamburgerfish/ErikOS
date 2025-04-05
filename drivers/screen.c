@@ -45,12 +45,15 @@ void print_image(int col, int row, int height, int length, unsigned const int* b
 	}
 }
 
-
-void set_cursor_offset(int offset) {
-	port_byte_out(REG_SCREEN_CTRL, 14);
-	port_byte_out(REG_SCREEN_DATA, (uint8_t)(offset >> 8));
-	port_byte_out(REG_SCREEN_CTRL, 15);
-	port_byte_out(REG_SCREEN_DATA, (uint8_t)(offset & 0xff));
+void get_bitmap(int x, int y, unsigned int* out_tile) {
+	int c = 0;
+	int tile_y;
+	int tile_x;
+	for (tile_y=y; tile_y<y+16; tile_y++) {
+		for (tile_x=x; tile_x<x+16; tile_x++) {
+			out_tile[c++] = *(VIDEO_ADDRESS+ tile_y*MAX_COLS + tile_x);
+		}
+	}
 }
 
 void clear_screen() {
@@ -61,7 +64,6 @@ void clear_screen() {
 	for (i = 0; i < screen_size*4; i++) {
 		screen[i] = 7;
 	}
-	set_cursor_offset(get_offset(0, 0));
 }
 
 

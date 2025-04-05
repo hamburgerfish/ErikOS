@@ -12,13 +12,12 @@ void kernel_main() {
 	isr_install();
 	irq_install();
 
-	init_timer(50);
 	clear_screen();
 	show_logo();
-
 	sleep(5);
+
 	init_board();
-	start();
+	init_counter();
 }
 
 void user_input(char *input) {
