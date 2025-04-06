@@ -4,7 +4,12 @@ This is a 32-bit operating system for the game Minesweeper.
 
 It can be run on an emulator such as QEMU
 
-It contains some elements of a traditional OS such as
+CONTROLS:
+    move cursor: WASD
+    change mode: F
+    interact: ENTER
+
+ErikOS contains some elements of a traditional OS such as
 1. video graphics driver
 2. keyboard driver
 3. global descriptor table
