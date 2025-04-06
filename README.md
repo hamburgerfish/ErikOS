@@ -25,6 +25,8 @@ The kernel is also larger than 0x6c00 bytes (0x7c00 - 0x1000), so loading all of
 
 Since the kernel is compiled into a single contiguous binary file, it would not function properly if it is split into two parts as done by the bootsector. To allow the kernel to function properly, a custom linker file is used to specify the memory offsets at which the text part (code) and data part would be loaded into (0x1000 and 0x8000 respectively).
 
+![image](images/Screenshot%202025-04-06%20113421.png)
+
 Once the kernel is fully loaded, control is given to the kernel by executing an unconditional jump to the 0x1000.
 
 ## video graphics **(code in drivers/screen.*)**
